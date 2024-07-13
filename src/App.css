@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+.modal-content {
+  background-color: var(--bs-dark)!important;
+}
+textarea:focus {
+  outline: none;
+}
+::-webkit-scrollbar {
+  width: 5px; /* Lebar scrollbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background: white; /* Warna thumb (kotak yang bisa digeser) */
+  border-radius: 6px; /* Radius untuk membuat ujung kotak menjadi bulat */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-purple{
+  background-color: #6f42c1!important;
+}
+.bg-pink{
+  background-color: #d63384!important;
+}
+.bg-orange{
+  background-color: #fd7e14!important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-toggle:empty::after {
+  display: none;
 }
